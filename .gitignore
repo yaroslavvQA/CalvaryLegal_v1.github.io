@@ -1,0 +1,20 @@
+# cPanel server files — not part of the website
+access-logs/
+cgi-bin/
+etc/
+logs/
+mail/
+public_ftp/
+ssl/
+tmp/
+tools/
+www/
+.well-known/
+
+# Backups
+Backup/
+
+# Misc
+public_html-backup
+public_html-backup.html
+.claude/

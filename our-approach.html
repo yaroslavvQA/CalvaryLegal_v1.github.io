@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8"/>
@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com"/>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Jost:wght@200;300;400;500&display=swap" rel="stylesheet"/>
-  <link rel="stylesheet" href="../CSS/styles.css"/>
+  <link rel="stylesheet" href="CSS/styles.css"/>
 </head>
 <body>
 
@@ -17,9 +17,9 @@
   <ul class="nav-links">
     <li><a href="practice-areas.html">Practice Areas</a></li>
     <li><a class="active" href="our-approach.html">Our Approach</a></li>
-    <li><a href="index.html#network">Our Network</a></li>
-    <li><a href="index.html#team">Attorney</a></li>
-    <li><a href="index.html#jurisdictions">Jurisdictions</a></li>
+    <li><a href="our-network.html">Our Network</a></li>
+    <li><a href="attorney.html">Attorney</a></li>
+    <li><a href="jurisdictions.html">Jurisdictions</a></li>
     <li><a href="cross-border.html">Cross-Border</a></li>
   </ul>
   <a href="https://calendly.com/yoni-calvarylegal/30min" target="_blank" class="nav-cta">Schedule a Consultation</a>
@@ -31,16 +31,16 @@
 <div class="mobile-nav" id="mobileNav">
   <a href="practice-areas.html" onclick="toggleMenu()">Practice Areas</a>
   <a href="our-approach.html" onclick="toggleMenu()">Our Approach</a>
-  <a href="index.html#network" onclick="toggleMenu()">Our Network</a>
-  <a href="index.html#team" onclick="toggleMenu()">Attorney</a>
-  <a href="index.html#jurisdictions" onclick="toggleMenu()">Jurisdictions</a>
+  <a href="our-network.html" onclick="toggleMenu()">Our Network</a>
+  <a href="attorney.html" onclick="toggleMenu()">Attorney</a>
+  <a href="jurisdictions.html" onclick="toggleMenu()">Jurisdictions</a>
   <a href="cross-border.html" onclick="toggleMenu()">Cross-Border Planning</a>
   <a href="https://calendly.com/yoni-calvarylegal/30min" target="_blank" onclick="toggleMenu()">Schedule a Consultation</a>
 </div>
 
 <div class="gold-line"></div>
 
-<section class="page-hero">
+<!-- <section class="page-hero">
   <div class="page-hero-inner">
     <div class="section-label reveal">Our Approach</div>
     <h1 class="page-title reveal reveal-delay-1">Precision Over Templates.<br/>Strategy Over Forms.</h1>
@@ -49,10 +49,10 @@
       where you've been, and where you intend to go.
     </p>
   </div>
-</section>
+</section> -->
 
 <section id="approach">
-  <div class="section-label reveal">Our Approach</div>
+ <!--  <div class="section-label reveal">Our Approach</div> -->
   <h2 class="section-title reveal reveal-delay-1">Precision Over Templates.<br/>Strategy Over Forms.</h2>
   <div class="approach-grid">
     <div class="approach-left">
@@ -133,6 +133,10 @@
   </div>
 </section>
 
+<div class="page-cta page-cta--ink">
+  <a href="https://calendly.com/yoni-calvarylegal/30min" target="_blank" class="btn-cta">Click Here</a>
+</div>
+
 <footer>
   <div class="footer-top">
     <div class="footer-brand">
@@ -157,21 +161,6 @@
   </div>
 </footer>
 
-<script>
-  const reveals = document.querySelectorAll('.reveal');
-  const obs = new IntersectionObserver(es => {
-    es.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
-  }, { threshold: 0.1 });
-  reveals.forEach(el => obs.observe(el));
-
-  window.addEventListener('scroll', () => {
-    document.getElementById('mainNav').style.height = window.scrollY > 60 ? '60px' : '72px';
-  });
-
-  function toggleMenu() {
-    document.getElementById('mobileNav').classList.toggle('open');
-  }
-</script>
-  <script src="public_html/Scripts/scripts.js"></script>
+<script src="Scripts/scripts.js"></script>
 </body>
 </html>
