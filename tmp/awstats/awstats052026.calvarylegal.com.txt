@@ -1,0 +1,412 @@
+AWSTATS DATA FILE 8.0 (build 20240604)
+# If you remove this file, all statistics for date 202605 will be lost/reset.
+# Last config file used to build this data file was /home/calvary/tmp/awstats/awstats.calvarylegal.com.conf.
+
+# Position (offset in bytes) in this file for beginning of each section for
+# direct I/O access. If you made changes somewhere in this file, you should
+# also remove completely the MAP section (AWStats will rewrite it at next
+# update).
+BEGIN_MAP 28
+POS_GENERAL 2083                
+POS_TIME 2765                
+POS_VISITOR 7369                
+POS_DAY 9896                
+POS_DOMAIN 3387                
+POS_LOGIN 3714                
+POS_ROBOT 3869                
+POS_WORMS 4177                
+POS_EMAILSENDER 4308                
+POS_EMAILRECEIVER 4451                
+POS_SESSION 10054               
+POS_FILESIZE 13804               
+POS_REQUESTTIME 13907               
+POS_SIDER 10223               
+POS_FILETYPES 4586                
+POS_DOWNLOADS 4690                
+POS_OS 4738                
+POS_BROWSER 4895                
+POS_SCREENSIZE 5263                
+POS_UNKNOWNREFERER 5337                
+POS_UNKNOWNREFERERBROWSER 5704                
+POS_ORIGIN 5980                
+POS_SEREFERRALS 6114                
+POS_PAGEREFS 6258                
+POS_SEARCHWORDS 6406                
+POS_KEYWORDS 6558                
+POS_MISC 2429                
+POS_ERRORS 6617                
+POS_CLUSTER 3570                
+POS_SIDER_404 6711                
+END_MAP
+
+# LastLine    = Date of last record processed - Last record line number in last log - Last record offset in last log - Last record signature value
+# FirstTime   = Date of first visit for history file
+# LastTime    = Date of last visit for history file
+# LastUpdate  = Date of last update - Nb of parsed records - Nb of parsed old records - Nb of parsed new records - Nb of parsed corrupted - Nb of parsed dropped
+# TotalVisits = Number of visits
+# TotalUnique = Number of unique visitors
+# MonthHostsKnown   = Number of hosts known
+# MonthHostsUnKnown = Number of hosts unknown
+BEGIN_GENERAL 8
+LastLine 20260504120801 115 20559 10380905747978
+FirstTime 20260501004303
+LastTime 20260504110803
+LastUpdate 20260504121012 115 0 115 0 0
+TotalVisits 98                  
+TotalUnique 62                  
+MonthHostsKnown 0                   
+MonthHostsUnknown 62                  
+END_GENERAL
+
+# Misc ID - Pages - Hits - Bandwidth
+BEGIN_MISC 10
+WindowsMediaPlayerSupport 0 0 0
+TotalMisc 0 0 0
+DirectorSupport 0 0 0
+PDFSupport 0 0 0
+FlashSupport 0 0 0
+QuickTimeSupport 0 0 0
+JavaEnabled 0 0 0
+RealPlayerSupport 0 0 0
+AddToFavourites 0 0 0
+JavascriptDisabled 0 0 0
+END_MISC
+
+# Hour - Pages - Hits - Bandwidth - Not viewed Pages - Not viewed Hits - Not viewed Bandwidth
+BEGIN_TIME 24
+0 10 10 104634 5 7 52061
+1 4 4 208244 3 4 0
+2 2 2 104122 4 6 0
+3 11 11 156695 5 7 0
+4 2 2 104122 4 5 0
+5 2 2 104122 0 1 0
+6 5 5 260305 5 7 20586
+7 11 11 260689 8 8 104122
+8 22 22 550893 11 19 0
+9 7 7 52445 5 5 0
+10 1 1 52061 4 4 0
+11 6 6 312366 6 8 0
+12 6 6 104378 13 13 0
+13 3 3 156183 6 8 0
+14 4 4 208244 11 11 0
+15 15 15 468933 3 11 0
+16 3 3 156183 3 4 0
+17 2 2 104122 3 5 0
+18 7 7 52445 3 3 0
+19 3 3 156183 3 4 0
+20 3 3 156183 1 3 0
+21 7 7 52445 4 5 0
+22 4 4 208244 3 4 0
+23 0 0 0 3 4 10293
+END_TIME
+
+# Domain - Pages - Hits - Bandwidth
+# The 25 first Pages must be first (order not required for others)
+BEGIN_DOMAIN 8
+us 92 92 2064458
+jp 25 25 1301525
+lv 10 10 51465
+cn 8 8 416488
+ca 2 2 104122
+gb 1 1 52061
+fr 1 1 52061
+se 1 1 52061
+END_DOMAIN
+
+# Cluster ID - Pages - Hits - Bandwidth
+BEGIN_CLUSTER 0
+END_CLUSTER
+
+# Login - Pages - Hits - Bandwidth - Last visit
+# The 10 first Pages must be first (order not required for others)
+BEGIN_LOGIN 0
+END_LOGIN
+
+# Robot ID - Hits - Bandwidth - Last visit - Hits on robots.txt
+# The 25 first Hits must be first (order not required for others)
+BEGIN_ROBOT 5
+bot[\s_+:,\.\;\/\\-] 2 104122 20260501070737 0
+bingbot/ 2 20586 20260504062120 0
+survey 1 0 20260501030141 0
+nutch 1 52061 20260501000742 0
+Googlebot/ 1 10293 20260503230330 0
+END_ROBOT
+
+# Worm ID - Hits - Bandwidth - Last visit
+# The 5 first Hits must be first (order not required for others)
+BEGIN_WORMS 0
+END_WORMS
+
+# EMail - Hits - Bandwidth - Last visit
+# The 20 first Hits must be first (order not required for others)
+BEGIN_EMAILSENDER 0
+END_EMAILSENDER
+
+# EMail - Hits - Bandwidth - Last visit
+# The 20 first hits must be first (order not required for others)
+BEGIN_EMAILRECEIVER 0
+END_EMAILRECEIVER
+
+# Files type - Hits - Bandwidth - Bandwidth without compression - Bandwidth after compression
+BEGIN_FILETYPES 2
+html 90 4091041 0 0
+Unknown 50 3200 0 0
+END_FILETYPES
+
+# Downloads - Hits - Bandwidth
+BEGIN_DOWNLOADS 0
+END_DOWNLOADS
+
+# OS ID - Hits
+BEGIN_OS ID - Hits - Pages 7
+linux 14 14
+macosx15 4 4
+win10 27 27
+Unknown 56 56
+win98 1 1
+ios_iphone 37 37
+android10 1 1
+END_OS
+
+# Browser ID - Hits - Pages
+BEGIN_BROWSER 16
+mozilla 5 5
+chrome86.0.4240.75 3 3
+chrome142.0.0.0 12 12
+chrome122.0.0.0 21 21
+netscape7.1 1 1
+opera62.5.2254.61243 1 1
+chrome115.0.0.0 1 1
+Unknown 51 51
+chrome91.0.4472.114 1 1
+chrome126.0.0.0 1 1
+chrome114.0.0.0 1 1
+chrome135.0.0.0 2 2
+firefox142.0 1 1
+safari13.0.3 37 37
+chrome99.0.4844.51 1 1
+chrome105.0.0.0 1 1
+END_BROWSER
+
+# Screen size - Hits
+BEGIN_SCREENSIZE 0
+END_SCREENSIZE
+
+# Unknown referer OS - Last visit date
+BEGIN_UNKNOWNREFERER 3
+Cpanel-HTTP-Client/1.0 20260504094303
+Mozilla/5.0_(compatible;_CensysInspect/1.1;__https://about.censys.io/) 20260502193000
+Hello_from_Palo_Alto_Networks,_find_out_more_about_our_scans_in_https://docs-cortex.paloaltonetworks.com/r/1/Cortex-Xpanse/Scanning-activity 20260503144941
+END_UNKNOWNREFERER
+
+# Unknown referer Browser - Last visit date
+BEGIN_UNKNOWNREFERERBROWSER 2
+Hello_from_Palo_Alto_Networks,_find_out_more_about_our_scans_in_https://docs-cortex.paloaltonetworks.com/r/1/Cortex-Xpanse/Scanning-activity 20260503144941
+Cpanel-HTTP-Client/1.0 20260504094303
+END_UNKNOWNREFERERBROWSER
+
+# Origin - Pages - Hits 
+BEGIN_ORIGIN 6
+From0 140 140
+From1 0 0
+From2 0 0
+From3 0 0
+From4 0 0
+From5 0 0
+END_ORIGIN
+
+# Search engine referers ID - Pages - Hits
+BEGIN_SEREFERRALS 0
+END_SEREFERRALS
+
+# External page referers - Pages - Hits
+# The 25 first Pages must be first (order not required for others)
+BEGIN_PAGEREFS 0
+END_PAGEREFS
+
+# Search keyphrases - Number of search
+# The 10 first number of search must be first (order not required for others)
+BEGIN_SEARCHWORDS 0
+END_SEARCHWORDS
+
+# Search keywords - Number of search
+# The 25 first number of search must be first (order not required for others)
+BEGIN_KEYWORDS 0
+END_KEYWORDS
+
+# Errors - Hits - Bandwidth
+BEGIN_ERRORS 2
+404 116 0
+101 6 0
+END_ERRORS
+
+# URL with 404 errors - Hits - Last URL referrer
+BEGIN_SIDER_404 17
+/wp 1 -
+/postnews.php 1 -
+/wp-admin/setup-config.php 1 -
+/wp-admin/txets.php 1 -
+/old 1 -
+/wp-admin/postnews.php 1 -
+/wp-content/txets.php 1 -
+/schallfuns.php 1 -
+/wp-includes/postnews.php 1 -
+/wp-content/postnews.php 1 -
+/style.php 2 -
+/blog 1 -
+/txets.php 1 -
+/robots.txt 12 -
+/wordpress 1 -
+/wp-includes/txets.php 1 -
+/wp-admin/install.php 88 -
+END_SIDER_404
+
+# Host - Pages - Hits - Bandwidth - Last visit date - [Start date of last visit] - [Last page of last visit]
+# [Start date of last visit] and [Last page of last visit] are saved only if session is not finished
+# The 25 first Hits must be first (order not required for others)
+BEGIN_VISITOR 62
+160.153.191.19 50 50 3200 20260504094303
+50.19.195.90 10 10 520610 20260504081132
+83.99.206.247 10 10 51465 20260504081132
+54.205.47.14 10 10 520610 20260504081134
+43.157.158.178 2 2 104122 20260503214027
+43.131.36.84 2 2 104122 20260504081135
+43.135.211.148 1 1 52061 20260501070738
+43.164.0.96 1 1 52061 20260504081130
+43.135.144.126 1 1 52061 20260501223425
+43.159.152.4 1 1 52061 20260501122148
+52.90.241.132 1 1 52061 20260504062633
+43.130.154.56 1 1 52061 20260502083519
+43.133.253.253 1 1 52061 20260503004216
+157.173.122.176 1 1 52061 20260504104734
+43.164.192.151 1 1 52061 20260502110758
+43.157.156.190 1 1 52061 20260502014448
+43.166.237.57 1 1 52061 20260501014554
+167.94.146.51 1 1 52061 20260501153153
+43.165.197.116 1 1 52061 20260501133552
+106.54.62.156 1 1 52061 20260501183212
+43.164.196.244 1 1 52061 20260503112934
+3.18.186.238 1 1 52061 20260503222833
+54.244.14.158 1 1 52061 20260501060104
+52.1.230.235 1 1 52061 20260504081130
+43.166.1.243 1 1 52061 20260504010234
+162.14.109.170 1 1 52061 20260502071102
+43.155.162.41 1 1 52061 20260501145337
+35.206.126.150 1 1 10293 20260504081130
+206.189.99.55 1 1 52061 20260502035916
+98.83.147.108 1 1 52061 20260502111135
+43.153.96.233 1 1 52061 20260503065755
+128.90.141.19 1 1 52061 20260502141627
+49.51.72.236 1 1 52061 20260504030233
+66.132.172.37 1 1 52061 20260502112230
+43.132.214.228 1 1 52061 20260501165216
+142.93.152.4 1 1 52061 20260502201814
+43.166.251.233 1 1 52061 20260504110803 20260504110803 /
+35.209.217.255 1 1 10293 20260504081130
+98.94.59.252 1 1 52061 20260502053154
+43.161.251.162 1 1 52061 20260503142723
+43.130.228.73 1 1 52061 20260502063806
+66.132.172.97 1 1 52061 20260502193000
+43.157.53.115 1 1 52061 20260502154936
+119.91.20.139 1 1 52061 20260503200320
+175.27.163.171 1 1 52061 20260503072005
+192.36.109.75 1 1 52061 20260503071220
+135.148.195.1 1 1 52061 20260502004643
+66.132.172.187 1 1 52061 20260501010750
+101.32.49.171 1 1 52061 20260503194308
+198.235.24.168 1 1 52061 20260503144941
+170.106.148.137 1 1 52061 20260501054734
+199.244.88.222 1 1 52061 20260504034447
+49.233.45.47 1 1 52061 20260504081135
+170.106.35.137 1 1 52061 20260502175725
+66.132.186.167 1 1 52061 20260502073147
+136.0.38.11 1 1 10293 20260504081130
+49.51.180.2 1 1 52061 20260503041652
+111.230.233.46 1 1 52061 20260502194011
+192.144.148.122 1 1 52061 20260501060937
+54.234.9.97 1 1 52061 20260504110515
+43.157.38.228 1 1 52061 20260503161303
+43.164.3.182 1 1 52061 20260503094357
+END_VISITOR
+
+# Date - Pages - Hits - Bandwidth - Visits
+BEGIN_DAY 4
+20260501 28 28 833744 21
+20260502 42 42 1354610 29
+20260503 33 33 886061 25
+20260504 37 37 1019826 23
+END_DAY
+
+# Session range - Number of visits
+BEGIN_SESSION 3
+30s-2mn 1
+0s-30s 94
+15mn-30mn 2
+END_SESSION
+
+# URL - Pages - Bandwidth - Entry - Exit
+# The 25 first Pages must be first (order not required for others)
+BEGIN_SIDER 51
+/ 90 4091041 73 72
+/.well-known/acme-challenge/9LB0HK9XJHP_6RY_EZW1YN5_K42AMEZS 1 64 1 0
+/.well-known/acme-challenge/DRLZRR1-LUELT_I4N6YDIF_BSF9CXRFC 1 64 0 1
+/.well-known/acme-challenge/C--IX30VHHMAKL-W83RN97-GERTAJ06O 1 64 1 0
+/.well-known/acme-challenge/IMXQ-F_VOSWB-6Z4A0W_KHVDPFGNNPL6 1 64 0 1
+/.well-known/acme-challenge/_Q6-VBN6-YQ8FQ5BDQUGCMXD9BU0RMKU 1 64 1 0
+/.well-known/acme-challenge/NB95E3G1VLMOA78MOO36DA853U3DB0HJ 1 64 0 1
+/.well-known/acme-challenge/1TGNW9_EZXL8W9WWIZQRJI0KJHU4HRG1 1 64 0 1
+/.well-known/acme-challenge/RCGAL3G3R4KAMWITVOXZB5HNQF-4LCM3 1 64 0 1
+/.well-known/acme-challenge/39QDNYAG6N8SN20X8CPE4XPEBPK_1_VQ 1 64 0 1
+/.well-known/acme-challenge/C39W3U4DA80AWS1G4V3CKPAZ9B9LPIW3 1 64 1 0
+/.well-known/acme-challenge/V4SQONG5NYUH07Q6ZST_GLAZRBJBGJ-8 1 64 1 0
+/.well-known/acme-challenge/_C2X7W8TUN64TX2ADU8DR-OOLV3DKJEV 1 64 1 0
+/.well-known/acme-challenge/QA_VOY223W9FALDAR9L3FRHY97L1UPBZ 1 64 0 1
+/.well-known/acme-challenge/IARE9498F1R4U9LBUHP5REH4D5BYO-42 1 64 1 0
+/.well-known/acme-challenge/34-KX63ST8SQWLVM4AXKRUO0YOI29U_K 1 64 0 1
+/.well-known/acme-challenge/QMFY0C-AMRJKK737_T-NQFNKXRIEW528 1 64 0 1
+/.well-known/acme-challenge/T-ZJ0-_EZUJNHVGKL0X3-B71G2VXO7UK 1 64 0 1
+/.well-known/acme-challenge/R9UD3_M7XEOF8ONFNLYTYZ0WSGU5D-T0 1 64 1 0
+/.well-known/acme-challenge/1RV_6RE_Q-KSCNT0NB6D5CE2ATO9OD6S 1 64 0 1
+/.well-known/acme-challenge/R5G3KHZBVM80JDXQ0-G8ZS-F48QL8FQJ 1 64 0 1
+/.well-known/acme-challenge/OYTJ3MUWAAYWDFQALERWSO3RSFK1422T 1 64 1 0
+/.well-known/acme-challenge/4R0YNASACD_83Z7U7NUQRRFC0PVSRLFU 1 64 0 1
+/.well-known/acme-challenge/JZ08J607H21XG58I8W4G91-F4ICIGTEE 1 64 1 0
+/.well-known/acme-challenge/4MVAUM7NGAJI84Z3QQJL6VLBFQIVHRIM 1 64 1 0
+/.well-known/acme-challenge/5OE25_G-M-_OK7FNF2V4K512MMM0V532 1 64 1 0
+/.well-known/acme-challenge/4ZAZO_Q_DA76DE8AAOMBB5G1CVTCVZ_O 1 64 1 0
+/.well-known/acme-challenge/04739959HAD--J2-X7S58KL6R8S-I8-A 1 64 0 1
+/.well-known/acme-challenge/UEQKPBC9ACHA8FVUUP2_IW99WE1BE3-H 1 64 0 1
+/.well-known/acme-challenge/N7XMKATMB66LVZ10FMG-57KP99XZVISB 1 64 0 1
+/.well-known/acme-challenge/1118OZMWESZHIRWKX981XBC9JXS9SL1G 1 64 0 1
+/.well-known/acme-challenge/NYK-GPXU5VXCWIKI0CPLFH-W9ZG0K5SZ 1 64 0 1
+/.well-known/acme-challenge/7CNEGHVL0Y0E4J93A0YSL9NTKJQDB1IF 1 64 1 0
+/.well-known/acme-challenge/2NF_8TDH7TWNI9FRQWUZLAVJ-02A-PEU 1 64 1 0
+/.well-known/acme-challenge/GRHXG_6JCUUR-BUNRIXW42F8ZVBXKQE0 1 64 1 0
+/.well-known/acme-challenge/SJOEZMPL9ODVM26ZTCK-TKJ4BYM9MVDV 1 64 0 1
+/.well-known/acme-challenge/40NYAHA8AEJVO3W47M9039SM_72RL5WE 1 64 1 0
+/.well-known/acme-challenge/OJ202J9TOZ9IK38K_8WGESKAUIQPAIEB 1 64 1 0
+/.well-known/acme-challenge/Q6K98MFEJRMG4MQFCGZGQGBE5XJ3KPTZ 1 64 1 0
+/.well-known/acme-challenge/IV6V_9A-TKRUL02M_S_0-AHH9YXBYSBY 1 64 1 0
+/.well-known/acme-challenge/EHPBGRW23ULWTT5E7LSA8L_V_BEPG5JD 1 64 1 0
+/.well-known/acme-challenge/TGC6ZQBNMXL4N9OTK71I_3JHUL5XKR_A 1 64 0 1
+/.well-known/acme-challenge/ZNQEO69I23MD4Y1EFLSLNW87GSUCW0BL 1 64 0 1
+/.well-known/acme-challenge/LX9R3-CYBFR9RJ4D5_1M_DEBXHLETG2_ 1 64 1 0
+/.well-known/acme-challenge/ZL-J4FFJVPE57S1YPA72BTW5NZ39N7D7 1 64 1 0
+/.well-known/acme-challenge/N4PZXS8D195HNIU-V08S700HWXAL27Y5 1 64 1 0
+/.well-known/acme-challenge/SSFZ2BE5QNFGKP9XH2C8WC98WCB8V1DV 1 64 0 1
+/.well-known/acme-challenge/UPSG8V_KWKBJW74RC2Z3X-TLW-LAUEUD 1 64 0 1
+/.well-known/acme-challenge/PYUASYSP9E8IDADZIGMOMBMYQ-INOVV4 1 64 0 1
+/.well-known/acme-challenge/V7ULIOLPEJ1BQE4QWDTEG52KT7S0Y41Q 1 64 0 1
+/.well-known/acme-challenge/4DFV6-CF1YJ-EVMTFBVSPGOF9R53SC4- 1 64 1 0
+END_SIDER
+
+# Payload Range - Payload Frequency
+BEGIN_FILESIZE 3
+44-100 50
+0-44 155
+5K+ 91
+END_FILESIZE
+
+# Request Time Range - Request Time Frequency
+BEGIN_REQUESTTIME 0
+END_REQUESTTIME
