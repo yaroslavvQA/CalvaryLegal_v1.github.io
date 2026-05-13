@@ -13,6 +13,8 @@ window.addEventListener('scroll', () => {
 /* ── MOBILE MENU ── */
 function toggleMenu() {
   document.getElementById('mobileNav').classList.toggle('open');
+  document.querySelector('.hamburger').classList.toggle('open');
+  document.body.style.overflow = document.getElementById('mobileNav').classList.contains('open') ? 'hidden' : '';
 }
 
 /* ── ACTIVE NAV ON SCROLL ── */

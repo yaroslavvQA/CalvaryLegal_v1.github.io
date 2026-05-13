@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Jurisdictions & Network | Calvary International Law PLLC</title>
+  <meta name="description" content="Jurisdictions & Network at Calvary International Law PLLC — precision, strategy, and bespoke cross-border counsel."/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Jost:wght@200;300;400;500&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="CSS/styles.css"/>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg"/>
+  <style>
+    /* ── SECTION 1: APPROACH (dark) ── */
+    #approach {
+      background: var(--ink);
+      position: relative;
+    }
+    #approach::after {
+      content: '';
+      position: absolute; bottom: 0; left: 8vw; right: 8vw;
+      height: 1px; background: rgba(191,161,106,0.15);
+    }
+    #approach .section-label { color: var(--gold); }
+    #approach h2.section-title { color: var(--gold-pale); }
+    #approach p.section-intro { color: rgba(237,227,204,0.6); }
+
+    /* ── SECTION 2: JURISDICTIONS (light) ── */
+    #jurisdictions {
+      background: var(--cream);
+    }
+    #jurisdictions .section-label { color: var(--burgundy); }
+    #jurisdictions h2.section-title { color: var(--ink); }
+    #jurisdictions p.section-intro { color: var(--ink-soft); }
+
+    .jur-light-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap: 1.5rem;
+      margin-top: 3rem;
+    }
+    .jur-light-card {
+      background: white;
+      border-left: 3px solid rgba(92,26,43,0.15);
+      padding: 1.75rem 1.5rem;
+      transition: border-color 0.25s, box-shadow 0.25s, transform 0.25s;
+    }
+    .jur-light-card:hover {
+      border-left-color: var(--burgundy);
+      box-shadow: 0 6px 24px rgba(92,26,43,0.08);
+      transform: translateY(-2px);
+    }
+    .jur-light-name {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.3rem; font-weight: 500;
+      color: var(--burgundy); margin-bottom: 0.5rem;
+    }
+    .jur-light-use {
+      font-family: 'Jost', sans-serif; font-weight: 300;
+      font-size: 0.76rem; line-height: 1.75;
+      color: var(--ink-soft);
+    }
+
+    .jur-bottom-cta {
+      margin-top: 4rem; display: flex; flex-direction: column;
+      align-items: center; gap: 1.5rem; text-align: center;
+    }
+    .jur-bottom-cta p {
+      font-family: 'Jost', sans-serif; font-weight: 300;
+      font-size: 0.87rem; color: var(--ink-soft);
+      max-width: 48ch;
+    }
+
+    @media (max-width: 900px) {
+      .jur-light-grid { grid-template-columns: 1fr 1fr; gap: 1rem; }
+    }
+    @media (max-width: 560px) {
+      .jur-light-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<nav id="mainNav">
+  <a href="index.html" class="nav-logo">Calvary<span> International Law</span></a>
+  <div class="nav-links">
+    <button onclick="location.href='practice-areas.html'">Practice Areas</button>
+    <button class="active" onclick="location.href='jurisdictions-and-network.html'">Jurisdictions &amp; Network</button>
+    <button onclick="location.href='our-network.html'">Our Network</button>
+    <button onclick="location.href='our-team.html'">Our Team</button>
+    <button onclick="location.href='cross-border.html'">Cross-Border</button>
+  </div>
+  <a href="https://calendly.com/yoni-calvarylegal/30min" target="_blank" class="nav-cta">Schedule a Consultation</a>
+  <div class="hamburger" onclick="toggleMenu()">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<div class="mobile-nav" id="mobileNav">
+  <a href="practice-areas.html" onclick="toggleMenu()">Practice Areas</a>
+  <a href="jurisdictions-and-network.html" onclick="toggleMenu()">Jurisdictions &amp; Network</a>
+  <a href="our-network.html" onclick="toggleMenu()">Our Network</a>
+  <a href="our-team.html" onclick="toggleMenu()">Our Team</a>
+  <a href="cross-border.html" onclick="toggleMenu()">Cross-Border Planning</a>
+  <a href="https://calendly.com/yoni-calvarylegal/30min" target="_blank" onclick="toggleMenu()">Schedule a Consultation</a>
+</div>
+
+<div class="gold-line"></div>
+
+<!-- ── SECTION 1: OUR APPROACH (dark) ── -->
+<section id="approach">
+  <div class="section-label reveal">Our Approach</div>
+  <h2 class="section-title reveal reveal-delay-1">Precision Over Templates.<br/>Strategy Over Forms.</h2>
+  <div class="approach-grid">
+    <div class="approach-left">
+      <p class="section-intro reveal reveal-delay-2" style="margin-bottom:3rem;">
+        Every engagement at Calvary International Law begins not with a form or a checklist,
+        but with a thorough understanding of who you are, where you've been, and where you intend to go.
+      </p>
+      <div class="approach-pillars">
+        <div class="pillar reveal">
+          <div class="pillar-num">I</div>
+          <div>
+            <div class="pillar-title">Comprehensive Discovery</div>
+            <div class="pillar-text">
+              We begin every engagement with a thorough analysis of your full picture —
+              assets, residency history, citizenship, family structure, and intentions.
+              No strategy is built without a complete foundation.
+            </div>
+          </div>
+        </div>
+        <div class="pillar reveal reveal-delay-1">
+          <div class="pillar-num">II</div>
+          <div>
+            <div class="pillar-title">Multi-Jurisdictional Coordination</div>
+            <div class="pillar-text">
+              We don't advise in a vacuum. Our planning is coordinated with your accountants,
+              foreign counsel, and financial advisors — ensuring every piece of the structure
+              works together across every jurisdiction that applies to you.
+            </div>
+          </div>
+        </div>
+        <div class="pillar reveal reveal-delay-2">
+          <div class="pillar-num">III</div>
+          <div>
+            <div class="pillar-title">Bespoke Structuring</div>
+            <div class="pillar-text">
+              We design structures that fit your life — not generic templates adapted to
+              your situation. Each engagement produces a tailored strategy aligned with
+              your legal obligations, risk tolerance, and long-term goals.
+            </div>
+          </div>
+        </div>
+        <div class="pillar reveal reveal-delay-3">
+          <div class="pillar-num">IV</div>
+          <div>
+            <div class="pillar-title">Ongoing Stewardship</div>
+            <div class="pillar-text">
+              International law changes. Your life changes. We monitor both — providing
+              annual reviews, law-change alerts, and proactive updates to keep your
+              structures legally sound and strategically optimal.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="approach-right reveal reveal-delay-2">
+      <div class="approach-quote">
+        Our engagements begin with a thorough analysis — not a template.
+      </div>
+      <div class="approach-stats">
+        <div class="approach-stat">
+          <div class="approach-stat-num">12+</div>
+          <div class="approach-stat-label">International Jurisdictions Served</div>
+        </div>
+        <div class="approach-stat">
+          <div class="approach-stat-num">50</div>
+          <div class="approach-stat-label">US States — Of-Counsel Coverage</div>
+        </div>
+        <div class="approach-stat">
+          <div class="approach-stat-num">100%</div>
+          <div class="approach-stat-label">FBAR &amp; FATCA Compliant Structures</div>
+        </div>
+        <div class="approach-stat">
+          <div class="approach-stat-num">1</div>
+          <div class="approach-stat-label">Unified Strategy Across Every Jurisdiction</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── SECTION 2: JURISDICTIONS (light) ── -->
+<section id="jurisdictions">
+  <div class="section-label reveal">Where We Work</div>
+  <h2 class="section-title reveal reveal-delay-1">Jurisdictions &amp; Network</h2>
+  <p class="section-intro reveal reveal-delay-2">
+    We maintain working knowledge of — and active partner relationships in —
+    the jurisdictions most commonly relevant to our clients' planning needs.
+  </p>
+
+  <div class="jur-light-grid">
+    <div class="jur-light-card reveal">
+      <div class="jur-light-name">Cook Islands</div>
+      <div class="jur-light-use">Asset protection trusts · Strongest creditor protection framework globally</div>
+    </div>
+    <div class="jur-light-card reveal reveal-delay-1">
+      <div class="jur-light-name">Nevis</div>
+      <div class="jur-light-use">LLC structures · Charging order protection · Business formation</div>
+    </div>
+    <div class="jur-light-card reveal reveal-delay-2">
+      <div class="jur-light-name">Liechtenstein</div>
+      <div class="jur-light-use">Foundations &amp; Anstalts · Multi-generational family structures</div>
+    </div>
+    <div class="jur-light-card reveal">
+      <div class="jur-light-name">Isle of Man</div>
+      <div class="jur-light-use">Trusts · Tax-neutral holding structures · European gateway</div>
+    </div>
+    <div class="jur-light-card reveal reveal-delay-1">
+      <div class="jur-light-name">UAE / Dubai</div>
+      <div class="jur-light-use">Residency planning · DIFC structures · No income tax jurisdiction</div>
+    </div>
+    <div class="jur-light-card reveal reveal-delay-2">
+      <div class="jur-light-name">Switzerland</div>
+      <div class="jur-light-use">Banking &amp; custody · Privacy · Wealth management coordination</div>
+    </div>
+    <div class="jur-light-card reveal">
+      <div class="jur-light-name">Cayman Islands</div>
+      <div class="jur-light-use">Fund structures · Holding companies · International business</div>
+    </div>
+    <div class="jur-light-card reveal reveal-delay-1">
+      <div class="jur-light-name">British Virgin Islands</div>
+      <div class="jur-light-use">BVI companies · Flexible holding structures · Tax neutrality</div>
+    </div>
+    <div class="jur-light-card reveal reveal-delay-2">
+      <div class="jur-light-name">Canada</div>
+      <div class="jur-light-use">US–Canada cross-border · Treaty planning · Estate coordination</div>
+    </div>
+    <div class="jur-light-card reveal">
+      <div class="jur-light-name">Bahamas</div>
+      <div class="jur-light-use">Executive Entity Act · Private trust companies · Wealth preservation</div>
+    </div>
+    <div class="jur-light-card reveal reveal-delay-1">
+      <div class="jur-light-name">Costa Rica</div>
+      <div class="jur-light-use">Residency · Business operations · US–Latin America cross-border</div>
+    </div>
+    <div class="jur-light-card reveal reveal-delay-2">
+      <div class="jur-light-name">Belize</div>
+      <div class="jur-light-use">IBCs · Asset protection · Offshore trust structures</div>
+    </div>
+  </div>
+
+  <div class="jur-bottom-cta reveal">
+    <p>Planning that involves any of these jurisdictions requires coordinated, specialist counsel.</p>
+    <a href="https://calendly.com/yoni-calvarylegal/30min" target="_blank" class="btn-primary">Click Here</a>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-top">
+    <div class="footer-brand">
+      <div class="brand-name">Calvary International Law</div>
+      <div class="brand-sub">PLLC</div>
+      <p>Law Without Borders. <br>Counsel Without Compromise.</p>
+    </div>
+    <div class="footer-nav footer-contact">
+      <h4>Contact</h4>
+      <p>
+        Calvary International Law<br/>
+        1763 Columbia Road NW, Suite 175<br/>
+        Washington, DC 20009<br/>
+        <a href="mailto:yoni@calvarylegal.com">yoni@calvarylegal.com</a>
+      </p>
+      <a href="privacy.html">Privacy Policy</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 Calvary International Law PLLC · All Rights Reserved</p>
+    <p>DC Bar No. 1023271 &nbsp;·&nbsp; www.calvarylegal.com</p>
+  </div>
+</footer>
+
+<script src="Scripts/scripts.js"></script>
+</body>
+</html>

@@ -9,20 +9,20 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Jost:wght@200;300;400;500&display=swap" rel="stylesheet"/>
   <link rel="stylesheet" href="CSS/styles.css"/>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg"/>
 </head>
 <body>
 
 <!-- NAV -->
 <nav id="mainNav">
   <a href="index.html" class="nav-logo">Calvary<span> International Law</span></a>
-  <ul class="nav-links">
-    <li><a href="practice-areas.html">Practice Areas</a></li>
-    <li><a href="our-approach.html">Our Approach</a></li>
-    <li><a href="our-network.html">Our Network</a></li>
-    <li><a href="attorney.html">Attorney</a></li>
-    <li><a href="jurisdictions.html">Jurisdictions</a></li>
-    <li><a href="cross-border.html">Cross-Border</a></li>
-  </ul>
+  <div class="nav-links">
+    <button onclick="location.href='practice-areas.html'">Practice Areas</button>
+    <button class="active" onclick="location.href='jurisdictions-and-network.html'">Jurisdictions &amp; Network</button>
+    <button onclick="location.href='our-network.html'">Our Network</button>
+    <button onclick="location.href='our-team.html'">Our Team</button>
+    <button onclick="location.href='cross-border.html'">Cross-Border</button>
+  </div>
   <a href="https://calendly.com/yoni-calvarylegal/30min" target="_blank" class="nav-cta">Schedule a Consultation</a>
   <div class="hamburger" onclick="toggleMenu()">
     <span></span><span></span><span></span>
@@ -31,15 +31,14 @@
 
 <div class="mobile-nav" id="mobileNav">
   <a href="practice-areas.html" onclick="toggleMenu()">Practice Areas</a>
-  <a href="our-approach.html" onclick="toggleMenu()">Our Approach</a>
+  <a href="jurisdictions-and-network" onclick="toggleMenu()">Jurisdictions & Network</a>
   <a href="our-network.html" onclick="toggleMenu()">Our Network</a>
-  <a href="attorney.html" onclick="toggleMenu()">Attorney</a>
-  <a href="jurisdictions.html" onclick="toggleMenu()">Jurisdictions</a>
+  <a href="our-team.html" onclick="toggleMenu()">Our Team</a>
   <a href="cross-border.html" onclick="toggleMenu()">Cross-Border Planning</a>
   <a href="https://calendly.com/yoni-calvarylegal/30min" target="_blank" onclick="toggleMenu()">Schedule a Consultation</a>
 </div>
 
-<div class="gold-line"></div>
+<!-- <div class="gold-line"></div> -->
 
 <!-- HERO -->
 <div class="hero">
@@ -62,16 +61,16 @@
 </div>
 
 <!-- CREDENTIAL STRIP -->
-<div class="credential-strip">
+<!-- <div class="credential-strip">
   <div class="credential-item">Licensed · Washington, DC</div>
   <div class="credential-item">DC Bar No. 1023271</div>
   <div class="credential-item">12+ International Jurisdictions</div>
   <div class="credential-item">Of-Counsel Coverage · All 50 US States</div>
   <div class="credential-item">FBAR &amp; FATCA Compliant Structures</div>
-</div>
+</div> -->
 
 <!-- PRACTICE AREAS -->
-<section id="services">
+<!-- <section id="services">
   <div class="section-label reveal">Practice Areas</div>
   <h2 class="section-title reveal reveal-delay-1">What We Do</h2>
   <p class="section-intro reveal reveal-delay-2">
@@ -122,7 +121,7 @@
   <div class="section-cta-row reveal">
     <a href="practice-areas.html" class="section-cta-link">Explore All Practice Areas →</a>
   </div>
-</section>
+</section> -->
 
 <!-- OUR APPROACH -->
 <section id="approach">
@@ -139,7 +138,7 @@
 </section>
 
 <!-- THE ATTORNEY -->
-<section id="team">
+<!-- <section id="team">
   <div class="section-label reveal">The Attorney</div>
   <h2 class="section-title reveal reveal-delay-1">Dedicated, Senior-Level<br/>Attention on Every Matter</h2>
   <div class="team-layout">
@@ -172,7 +171,7 @@
       </div>
     </div>
   </div>
-</section>
+</section> -->
 
 <!-- OUR REACH -->
 <section id="network">

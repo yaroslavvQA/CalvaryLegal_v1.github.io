@@ -9,19 +9,19 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Jost:wght@200;300;400;500&display=swap" rel="stylesheet"/>
   <link rel="stylesheet" href="CSS/styles.css"/>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg"/>
 </head>
 <body>
 
 <nav id="mainNav">
   <a href="index.html" class="nav-logo">Calvary<span> International Law</span></a>
-  <ul class="nav-links">
-    <li><a class="active" href="practice-areas.html">Practice Areas</a></li>
-    <li><a href="our-approach.html">Our Approach</a></li>
-    <li><a href="our-network.html">Our Network</a></li>
-    <li><a href="attorney.html">Attorney</a></li>
-    <li><a href="jurisdictions.html">Jurisdictions</a></li>
-    <li><a href="cross-border.html">Cross-Border</a></li>
-  </ul>
+  <div class="nav-links">
+    <button onclick="location.href='practice-areas.html'">Practice Areas</button>
+    <button class="active" onclick="location.href='jurisdictions-and-network.html'">Jurisdictions &amp; Network</button>
+    <button onclick="location.href='our-network.html'">Our Network</button>
+    <button onclick="location.href='our-team.html'">Our Team</button>
+    <button onclick="location.href='cross-border.html'">Cross-Border</button>
+  </div>
   <a href="https://calendly.com/yoni-calvarylegal/30min" target="_blank" class="nav-cta">Schedule a Consultation</a>
   <div class="hamburger" onclick="toggleMenu()">
     <span></span><span></span><span></span>
@@ -30,10 +30,9 @@
 
 <div class="mobile-nav" id="mobileNav">
   <a href="practice-areas.html" onclick="toggleMenu()">Practice Areas</a>
-  <a href="our-approach.html" onclick="toggleMenu()">Our Approach</a>
+  <a href="jurisdictions-and-network" onclick="toggleMenu()">Jurisdictions & Network</a>
   <a href="our-network.html" onclick="toggleMenu()">Our Network</a>
-  <a href="attorney.html" onclick="toggleMenu()">Attorney</a>
-  <a href="jurisdictions.html" onclick="toggleMenu()">Jurisdictions</a>
+  <a href="our-team.html" onclick="toggleMenu()">Our Team</a>
   <a href="cross-border.html" onclick="toggleMenu()">Cross-Border Planning</a>
   <a href="https://calendly.com/yoni-calvarylegal/30min" target="_blank" onclick="toggleMenu()">Schedule a Consultation</a>
 </div>
@@ -61,7 +60,7 @@
   <div class="services-grid">
     <div class="service-card reveal">
       <div class="service-num">01</div>
-      <div class="service-title">International Estate Planning</div>
+      <div class="service-title">Domestic & International Estate Planning</div>
       <div class="service-desc">
         Comprehensive estate and succession planning for families with assets, beneficiaries, or
         residency across multiple jurisdictions. We build structures that hold together across borders
@@ -73,10 +72,11 @@
         <span class="service-tag">Asset Protection</span>
         <span class="service-tag">Foreign Trusts</span>
       </div>
+      <a href="https://calendly.com/yoni-calvarylegal/30min" target="_blank" class="service-link">Learn More</a>
     </div>
     <div class="service-card reveal reveal-delay-1">
       <div class="service-num">02</div>
-      <div class="service-title">International Tax Strategy</div>
+      <div class="service-title">Domestic & International Tax Strategy</div>
       <div class="service-desc">
         From pre-immigration planning to expatriation, from GILTI to PFIC compliance — we navigate
         the full complexity of US international tax law. We coordinate with your accountants and
@@ -88,6 +88,7 @@
         <span class="service-tag">Exit Tax Planning</span>
         <span class="service-tag">Treaty Analysis</span>
       </div>
+      <a href="https://calendly.com/yoni-calvarylegal/30min" target="_blank" class="service-link">Learn More</a>
     </div>
     <div class="service-card reveal reveal-delay-2">
       <div class="service-num">03</div>
@@ -103,6 +104,7 @@
         <span class="service-tag">Holding Companies</span>
         <span class="service-tag">JV Agreements</span>
       </div>
+      <a href="https://calendly.com/yoni-calvarylegal/30min" target="_blank" class="service-link">Learn More</a>
     </div>
     <div class="service-card reveal">
       <div class="service-num">04</div>
@@ -133,6 +135,7 @@
         <span class="service-tag">International Partners</span>
         <span class="service-tag">Coordinated Counsel</span>
       </div>
+      <a href="our-network.html" class="service-link">Learn More</a>
     </div>
   </div>
 </section>
