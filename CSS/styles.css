@@ -2890,6 +2890,16 @@ nav { align-items: center; }
   /* Nav CTA — скрыта на мобиле (есть в мобильном меню) */
   .nav-cta { display: none !important; }
 
+  /* Hero — убираем лишние элементы на мобиле */
+  .hero-eyebrow { display: none !important; }
+  .hero-scroll { display: none !important; }
+
+  /* Hero — бордовая полоса сверху + отступ от навбара */
+  .hero {
+    border-top: 2.5rem solid var(--burgundy) !important;
+    padding-top: 4rem !important;
+  }
+
   /* Footer — simplified for mobile */
   footer {
     padding: 3rem 6vw 2rem !important;
