@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact | Calvary International Law</title>
+<meta name="description" content="Request a consultation with Calvary International Law for asset protection, estate planning, and cross-border legal counsel.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --burgundy: #5a1a2b;
+    --burgundy-deep: #3d0f1c;
+    --gold: #b8924a;
+    --gold-light: #d4b06e;
+    --ivory: #f7f1e6;
+    --cream: #faf6ed;
+    --ink: #2a1a1f;
+    --muted: #5e4f50;
+    --rule: #d9c9a8;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: 'Jost', sans-serif;
+    font-weight: 300;
+    background: var(--cream);
+    color: var(--ink);
+    line-height: 1.7;
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* ── HEADER ── */
+  header {
+    background: var(--burgundy-deep);
+    color: var(--ivory);
+    padding: 2rem 1.5rem;
+    border-bottom: 3px solid var(--gold);
+  }
+
+  .header-inner {
+    max-width: 920px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .brand { display: flex; align-items: center; gap: 1rem; }
+
+  .cross-mark {
+    width: 44px;
+    height: 44px;
+    border: 1.5px solid var(--gold);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+
+  .cross-mark svg { width: 22px; height: 22px; }
+
+  .brand-text { font-family: 'Cormorant Garamond', serif; line-height: 1.1; }
+  .brand-text .top { font-size: 1.15rem; letter-spacing: 0.18em; color: var(--ivory); font-weight: 500; }
+  .brand-text .bottom { font-size: 0.95rem; letter-spacing: 0.22em; color: var(--gold-light); font-weight: 400; text-transform: uppercase; }
+
+  .nav-back a {
+    color: var(--ivory); text-decoration: none;
+    font-size: 0.85rem; letter-spacing: 0.15em; text-transform: uppercase;
+    border-bottom: 1px solid transparent; padding-bottom: 2px;
+    transition: border-color 0.2s, color 0.2s;
+  }
+  .nav-back a:hover { color: var(--gold-light); border-color: var(--gold-light); }
+
+  /* ── HERO ── */
+  .hero {
+    background: linear-gradient(180deg, var(--burgundy) 0%, var(--burgundy-deep) 100%);
+    color: var(--ivory);
+    padding: 4rem 1.5rem 3.5rem;
+    text-align: center;
+    position: relative;
+  }
+
+  .hero::after {
+    content: '';
+    position: absolute;
+    bottom: -1px; left: 50%; transform: translateX(-50%);
+    width: 80px; height: 1px; background: var(--gold);
+  }
+
+  .hero .eyebrow {
+    font-family: 'Jost', sans-serif;
+    font-size: 0.75rem;
+    letter-spacing: 0.32em;
+    text-transform: uppercase;
+    color: var(--gold-light);
+    margin-bottom: 1.25rem;
+    font-weight: 400;
+  }
+
+  .hero h1 {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 500;
+    font-size: clamp(2.4rem, 5vw, 3.4rem);
+    letter-spacing: 0.02em;
+    line-height: 1.15;
+    margin-bottom: 1rem;
+  }
+
+  .hero .subtitle {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 1.15rem;
+    color: var(--gold-light);
+    max-width: 540px;
+    margin: 0 auto;
+  }
+
+  /* ── MAIN CONTENT ── */
+  main {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 4rem 1.5rem 3rem;
+  }
+
+  .intro {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.25rem;
+    line-height: 1.6;
+    color: var(--muted);
+    text-align: center;
+    margin-bottom: 3rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* ── FORM ── */
+  .form-wrap {
+    background: #fff;
+    border: 1px solid var(--rule);
+    padding: 3rem 2.5rem;
+    box-shadow: 0 1px 0 rgba(91,26,43,0.04), 0 12px 40px -20px rgba(91,26,43,0.18);
+  }
+
+  .form-row { margin-bottom: 1.75rem; }
+
+  .form-row.two-col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+  }
+
+  label {
+    display: block;
+    font-family: 'Jost', sans-serif;
+    font-size: 0.7rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--burgundy-deep);
+    font-weight: 500;
+    margin-bottom: 0.6rem;
+  }
+
+  label .req { color: var(--gold); margin-left: 2px; }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  select,
+  textarea {
+    width: 100%;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid var(--rule);
+    padding: 0.65rem 0;
+    font-family: 'Jost', sans-serif;
+    font-weight: 300;
+    font-size: 1rem;
+    color: var(--ink);
+    transition: border-color 0.2s;
+    outline: none;
+    border-radius: 0;
+  }
+
+  textarea {
+    min-height: 130px;
+    resize: vertical;
+    line-height: 1.6;
+  }
+
+  select {
+    appearance: none;
+    -webkit-appearance: none;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'><path fill='none' stroke='%23b8924a' stroke-width='1.5' d='M1 1l5 5 5-5'/></svg>");
+    background-repeat: no-repeat;
+    background-position: right 0.25rem center;
+    padding-right: 1.5rem;
+    cursor: pointer;
+  }
+
+  input:focus, select:focus, textarea:focus {
+    border-bottom-color: var(--gold);
+  }
+
+  input::placeholder, textarea::placeholder { color: rgba(94,79,80,0.35); }
+
+  /* ── CONSENT BLOCK ── */
+  .consent-block {
+    margin-top: 2.25rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--rule);
+  }
+
+  .checkbox-row {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.85rem;
+    margin-bottom: 1.5rem;
+    cursor: pointer;
+  }
+
+  .checkbox-row input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 18px; height: 18px;
+    min-width: 18px;
+    border: 1.5px solid var(--gold);
+    background: transparent;
+    margin-top: 3px;
+    cursor: pointer;
+    position: relative;
+    border-radius: 0;
+    transition: background 0.15s;
+  }
+
+  .checkbox-row input[type="checkbox"]:checked {
+    background: var(--gold);
+  }
+
+  .checkbox-row input[type="checkbox"]:checked::after {
+    content: '';
+    position: absolute;
+    left: 4px; top: 0px;
+    width: 6px; height: 11px;
+    border: solid var(--ivory);
+    border-width: 0 1.8px 1.8px 0;
+    transform: rotate(45deg);
+  }
+
+  .checkbox-row .label-text {
+    font-family: 'Jost', sans-serif;
+    font-weight: 300;
+    font-size: 0.85rem;
+    color: var(--muted);
+    line-height: 1.6;
+    flex: 1;
+  }
+
+  .checkbox-row .label-text a {
+    color: var(--burgundy);
+    border-bottom: 1px solid var(--gold);
+    text-decoration: none;
+    transition: color 0.15s;
+  }
+
+  .checkbox-row .label-text a:hover { color: var(--burgundy-deep); }
+
+  /* ── HONEYPOT ── */
+  .honeypot {
+    position: absolute;
+    left: -9999px;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+  }
+
+  /* ── SUBMIT ── */
+  .submit-wrap {
+    margin-top: 2.5rem;
+    text-align: center;
+  }
+
+  button[type="submit"] {
+    background: var(--burgundy-deep);
+    color: var(--ivory);
+    border: 1.5px solid var(--gold);
+    padding: 1.05rem 3rem;
+    font-family: 'Jost', sans-serif;
+    font-size: 0.78rem;
+    font-weight: 400;
+    letter-spacing: 0.28em;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.25s;
+  }
+
+  button[type="submit"]:hover {
+    background: var(--burgundy);
+    color: var(--gold-light);
+    letter-spacing: 0.32em;
+  }
+
+  button[type="submit"]:disabled {
+    opacity: 0.5;
+    cursor: wait;
+  }
+
+  /* ── DISCLAIMER ── */
+  .disclaimer {
+    margin-top: 2rem;
+    text-align: center;
+    font-size: 0.72rem;
+    color: var(--muted);
+    line-height: 1.7;
+    font-style: italic;
+    max-width: 540px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* ── ALT CONTACT ── */
+  .alt-contact {
+    margin-top: 4rem;
+    text-align: center;
+    padding: 2.5rem 1.5rem;
+    border-top: 1px solid var(--rule);
+    border-bottom: 1px solid var(--rule);
+  }
+
+  .alt-contact h3 {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 500;
+    font-size: 1.5rem;
+    color: var(--burgundy-deep);
+    margin-bottom: 0.5rem;
+  }
+
+  .alt-contact p {
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin-bottom: 1.5rem;
+  }
+
+  .alt-contact .calendly-link {
+    display: inline-block;
+    color: var(--burgundy-deep);
+    text-decoration: none;
+    font-size: 0.78rem;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    border-bottom: 1px solid var(--gold);
+    padding-bottom: 4px;
+    transition: color 0.2s, border-color 0.2s;
+  }
+
+  .alt-contact .calendly-link:hover {
+    color: var(--burgundy);
+    border-color: var(--burgundy);
+  }
+
+  /* ── SUCCESS STATE ── */
+  .success-state {
+    display: none;
+    text-align: center;
+    padding: 3rem 2rem;
+  }
+
+  .success-state.active { display: block; }
+  .form-wrap.hidden { display: none; }
+
+  .success-state .seal {
+    width: 56px; height: 56px;
+    margin: 0 auto 1.5rem;
+    border: 1.5px solid var(--gold);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .success-state h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 500;
+    font-size: 2rem;
+    color: var(--burgundy-deep);
+    margin-bottom: 1rem;
+  }
+
+  .success-state p {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 1.1rem;
+    color: var(--muted);
+    max-width: 480px;
+    margin: 0 auto 1.5rem;
+    line-height: 1.6;
+  }
+
+  /* ── FOOTER ── */
+  footer {
+    background: var(--burgundy-deep);
+    color: var(--ivory);
+    padding: 3rem 1.5rem;
+    text-align: center;
+    border-top: 2px solid var(--gold);
+    margin-top: 5rem;
+  }
+
+  footer .firm-name {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.15rem;
+    letter-spacing: 0.22em;
+    color: var(--gold-light);
+    margin-bottom: 0.75rem;
+  }
+
+  footer > div:not(.firm-name) {
+    font-size: 0.78rem;
+    color: rgba(247,241,230,0.6);
+    margin-bottom: 0.5rem;
+  }
+
+  footer a {
+    color: rgba(247,241,230,0.6);
+    text-decoration: none;
+    border-bottom: 1px solid rgba(184,146,74,0.3);
+    transition: color 0.2s, border-color 0.2s;
+  }
+
+  footer a:hover { color: var(--gold-light); border-color: var(--gold-light); }
+
+  /* ── RESPONSIVE ── */
+  @media (max-width: 640px) {
+    .form-wrap { padding: 2rem 1.5rem; }
+    .form-row.two-col { grid-template-columns: 1fr; gap: 0; }
+    .form-row.two-col .form-row { margin-bottom: 1.75rem; }
+    .hero { padding: 3rem 1.5rem 2.5rem; }
+    main { padding: 3rem 1.25rem 2rem; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <div class="brand">
+      <div class="cross-mark">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <line x1="12" y1="3" x2="12" y2="21" stroke="#b8924a" stroke-width="1.4" stroke-linecap="round"/>
+          <line x1="5" y1="9" x2="19" y2="9" stroke="#b8924a" stroke-width="1.4" stroke-linecap="round"/>
+        </svg>
+      </div>
+      <div class="brand-text">
+        <div class="top">CALVARY</div>
+        <div class="bottom">International Law</div>
+      </div>
+    </div>
+    <div class="nav-back">
+      <a href="/">Return to Home</a>
+    </div>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="eyebrow">Begin a Conversation</div>
+  <h1>Request a Consultation</h1>
+  <div class="subtitle">Discreet, sophisticated counsel for cross-border families, founders, and institutions.</div>
+</section>
+
+<main>
+
+  <p class="intro">
+    Tell us briefly about your situation. We respond personally, typically within one business day. All inquiries are treated as confidential.
+  </p>
+
+  <div class="form-wrap" id="formWrap">
+    <form id="contactForm" action="https://hook.us2.make.com/uqs91duvfqkkxattqxxehhsevflckzk3 " method="POST">
+
+      <input type="hidden" name="_subject" value="New Contact Form Submission — Calvary International Law">
+
+      <!-- Honeypot for basic spam protection -->
+      <div class="honeypot" aria-hidden="true">
+        <label for="website">Website (leave blank)</label>
+        <input type="text" name="_gotcha" id="website" tabindex="-1" autocomplete="off">
+      </div>
+
+      <div class="form-row two-col">
+        <div class="form-row" style="margin-bottom: 0;">
+          <label for="name">Full Name <span class="req">*</span></label>
+          <input type="text" id="name" name="name" required autocomplete="name">
+        </div>
+        <div class="form-row" style="margin-bottom: 0;">
+          <label for="email">Email <span class="req">*</span></label>
+          <input type="email" id="email" name="email" required autocomplete="email">
+        </div>
+      </div>
+
+      <div class="form-row two-col">
+        <div class="form-row" style="margin-bottom: 0;">
+          <label for="phone">Phone <span class="req">*</span></label>
+          <input type="tel" id="phone" name="phone" required autocomplete="tel" placeholder="(555) 555-5555">
+        </div>
+        <div class="form-row" style="margin-bottom: 0;">
+          <label for="referral">How did you hear about us?</label>
+          <select id="referral" name="referral">
+            <option value="">— Select —</option>
+            <option>Referral from a colleague</option>
+            <option>Referral from an existing client</option>
+            <option>Google search</option>
+            <option>LinkedIn</option>
+            <option>Event or webinar</option>
+            <option>Other</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <label for="inquiry">Type of Inquiry <span class="req">*</span></label>
+        <select id="inquiry" name="inquiry" required>
+          <option value="">— Select —</option>
+          <option>Estate Planning</option>
+          <option>Asset Protection</option>
+          <option>Cross-Border Planning</option>
+          <option>International Tax Strategy</option>
+          <option>Business Transactions</option>
+          <option>Other</option>
+        </select>
+      </div>
+
+      <div class="form-row">
+        <label for="message">Brief description of your situation <span class="req">*</span></label>
+        <textarea id="message" name="message" required placeholder="A few sentences about what you're looking to address. We'll follow up to discuss in detail."></textarea>
+      </div>
+
+      <div class="consent-block">
+        <label class="checkbox-row">
+          <input type="checkbox" name="sms_consent" value="yes">
+          <span class="label-text">
+            I agree to receive marketing and educational text messages from Calvary International Law PLLC at the phone number provided. Message frequency varies. Message and data rates may apply. Reply STOP to opt out, HELP for help. See our <a href="/privacy.html">privacy policy</a>.
+          </span>
+        </label>
+
+        <label class="checkbox-row">
+          <input type="checkbox" name="privacy_acknowledged" value="yes" required>
+          <span class="label-text">
+            I have read and acknowledge the <a href="/privacy.html">privacy policy</a>. I understand that submitting this form does not create an attorney-client relationship. <span class="req">*</span>
+          </span>
+        </label>
+      </div>
+
+      <div class="submit-wrap">
+        <button type="submit" id="submitBtn">Send Inquiry</button>
+      </div>
+
+      <div class="disclaimer">
+        Communications submitted through this form are not protected by the attorney-client privilege until a written engagement agreement is signed. Please do not include sensitive or time-critical information in your initial message.
+      </div>
+
+    </form>
+  </div>
+
+  <div class="success-state" id="successState">
+    <div class="seal">
+      <svg viewBox="0 0 24 24" width="26" height="26" xmlns="http://www.w3.org/2000/svg" fill="none">
+        <path d="M5 12.5l4.5 4.5L19 7.5" stroke="#b8924a" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </div>
+    <h2>Thank You</h2>
+    <p>Your inquiry has been received. We will review the details and respond personally, typically within one business day.</p>
+  </div>
+
+  <div class="alt-contact">
+          <h3>Prefer to schedule directly?</h3>
+          <p>Book a brief introductory call at a time that works for you.</p>
+          <a href="https://calendly.com/yoni-calvarylegal/30min" target="_blank" class="calendly-link">Open Scheduling</a>
+          <p style="margin-top: 1.5rem;">Or call us at <a href="tel:+12028887160" style="color: var(--burgundy); text-decoration: none; border-bottom: 1px solid rgba(191,161,106,0.4);">(202) 888-7160</a></p>
+        </div>
+
+</main>
+
+<footer>
+  <div class="firm-name">CALVARY INTERNATIONAL LAW</div>
+  <div>1763 Columbia Road NW, Suite 175 · Washington, DC 20009</div>
+  <div>DC Bar No. 1023271 · <a href="/privacy.html">Privacy Policy</a></div>
+  <div>&copy; 2026 Calvary International Law PLLC. All rights reserved.</div>
+</footer>
+
+<script>
+  (function() {
+    var form = document.getElementById('contactForm');
+    var btn = document.getElementById('submitBtn');
+    var formWrap = document.getElementById('formWrap');
+    var success = document.getElementById('successState');
+
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+      btn.disabled = true;
+      btn.textContent = 'Sending...';
+
+      var data = new FormData(form);
+
+      fetch(form.action, {
+        method: 'POST',
+        body: data,
+        headers: { 'Accept': 'application/json' }
+      })
+      .then(function(response) {
+        if (response.ok) {
+          formWrap.classList.add('hidden');
+          success.classList.add('active');
+          window.scrollTo({ top: success.offsetTop - 80, behavior: 'smooth' });
+        } else {
+          response.json().then(function(json) {
+            alert('There was a problem submitting the form. Please try again, or email us directly at yoni@calvarylegal.com.');
+            btn.disabled = false;
+            btn.textContent = 'Send Inquiry';
+          });
+        }
+      })
+      .catch(function() {
+        alert('There was a problem submitting the form. Please try again, or email us directly at yoni@calvarylegal.com.');
+        btn.disabled = false;
+        btn.textContent = 'Send Inquiry';
+      });
+    });
+  })();
+</script>
+
+</body>
+</html>
