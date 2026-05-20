@@ -484,7 +484,7 @@
   </p>
 
   <div class="form-wrap" id="formWrap">
-    <form id="contactForm" action="https://hook.us2.make.com/uqs91duvfqkkxattqxxehhsevflckzk3 " method="POST">
+    <form id="contactForm" action="https://hook.us2.make.com/uqs91duvfqkkxattqxxehhsevflckzk3" method="POST">
 
       <input type="hidden" name="_subject" value="New Contact Form Submission — Calvary International Law">
 
@@ -604,30 +604,42 @@
 
     form.addEventListener('submit', function(e) {
       e.preventDefault();
+      
+      // Check honeypot (bot protection)
+      var honeypot = document.getElementById('website').value;
+      if (honeypot) {
+        console.log('Honeypot triggered - likely a bot');
+        return;
+      }
+      
       btn.disabled = true;
       btn.textContent = 'Sending...';
 
       var data = new FormData(form);
+      // Remove honeypot from submission
+      data.delete('_gotcha');
 
       fetch(form.action, {
         method: 'POST',
-        body: data,
-        headers: { 'Accept': 'application/json' }
+        body: data
       })
       .then(function(response) {
         if (response.ok) {
           formWrap.classList.add('hidden');
           success.classList.add('active');
+          form.reset();
           window.scrollTo({ top: success.offsetTop - 80, behavior: 'smooth' });
         } else {
-          response.json().then(function(json) {
+          return response.text().then(function(text) {
+            console.error('Form submission error:', response.status, text);
             alert('There was a problem submitting the form. Please try again, or email us directly at yoni@calvarylegal.com.');
             btn.disabled = false;
             btn.textContent = 'Send Inquiry';
           });
         }
       })
-      .catch(function() {
+      .catch(function(error) {
+        console.error('Network error:', error);
         alert('There was a problem submitting the form. Please try again, or email us directly at yoni@calvarylegal.com.');
         btn.disabled = false;
         btn.textContent = 'Send Inquiry';
